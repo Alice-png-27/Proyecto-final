@@ -432,8 +432,8 @@ def draw_check():
             for i in range(len(white_options)):
                 if king_location in white_options[i]:
                     if counter < 15:
-                        pygame.draw.rect(screen, 'dark blue', [black_locations[king_index][0] * 100 + 1,
-                                                               black_locations[king_index][1] * 100 + 1, 100, 100], 5)
+                        pygame.draw.rect(screen, 'dark blue', [black_locations[king_index][0] * escalar(100) + esclar(1),
+                                                               black_locations[king_index][1] * escalar(100) + escalar(1), escalar(100), escalar(100)], 5)
 
 
 def draw_game_over():
